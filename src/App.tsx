@@ -1,9 +1,17 @@
+/* library */
 import React, { FC } from 'react';
-import AppNavigator from 'src/navigations/AppNavigator';
 import { registerRootComponent } from 'expo';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+/* navigation */
+import AppNavigator from 'src/navigations/AppNavigator';
 
 const App: FC = () => {
-  return <AppNavigator />;
+  return (
+    <PaperProvider>
+      <AppNavigator />
+    </PaperProvider>
+  )
 };
 
 export default registerRootComponent(App);
