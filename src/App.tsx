@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import AppNavigator from 'src/navigations/AppNavigator';
-import { registerRootComponent } from 'expo'
+import { registerRootComponent } from 'expo';
 
 const App: FC = () => {
-    return <AppNavigator />
-}
+  return <AppNavigator />;
+};
 
 export default registerRootComponent(App);

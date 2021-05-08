@@ -3,6 +3,6 @@ type Todo = {
   title: string;
   description: string;
   done: boolean;
-}
+};
 
 type Mode = 'list' | 'add';

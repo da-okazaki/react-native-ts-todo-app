@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
   modal: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
     height: 400,
   },
   todo_wrapper: {
@@ -73,6 +73,5 @@ export const styles = StyleSheet.create({
     padding: 30,
     color: '#fff',
     backgroundColor: '#dc143c',
-  }
+  },
 });
-
