@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { globalColors } from 'src/styles/constants-style';
 
 export const styles = StyleSheet.create({
   container: {
@@ -7,7 +8,7 @@ export const styles = StyleSheet.create({
   modal: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: globalColors.white,
     height: 400,
   },
   todo_wrapper: {
@@ -20,10 +21,11 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 1,
     paddingLeft: 15,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: globalColors.white2,
+    borderColor: globalColors.gray,
+    borderWidth: 1,
   },
   todo_title: {
-    width: 300,
     fontSize: 15,
     lineHeight: 20,
     textAlign: 'left',
@@ -31,29 +33,29 @@ export const styles = StyleSheet.create({
   plus: {
     fontSize: 20,
     textAlign: 'center',
-    color: '#4169e1',
+    color: globalColors.blue,
     marginTop: 15,
     paddingLeft: 15,
   },
   add: {
     fontSize: 15,
     textAlign: 'center',
-    color: '#fff',
+    color: globalColors.white,
     width: 250,
     marginTop: 20,
     marginRight: 5,
     padding: 10,
-    backgroundColor: '#4169e1',
+    backgroundColor: globalColors.blue,
   },
   cancel: {
     fontSize: 15,
     textAlign: 'center',
-    color: '#fff',
+    color: globalColors.white,
     width: '100%',
     marginTop: 20,
     marginLeft: 5,
     padding: 10,
-    backgroundColor: '#ccc',
+    backgroundColor: globalColors.gray,
   },
   textinput_frame: {
     width: '100%',
@@ -61,7 +63,7 @@ export const styles = StyleSheet.create({
   },
   textinput: {
     fontSize: 18,
-    borderColor: '#ccc',
+    borderColor: globalColors.gray,
     borderBottomWidth: 1,
     padding: 25,
   },
@@ -70,8 +72,8 @@ export const styles = StyleSheet.create({
   },
   delete: {
     fontSize: 14,
-    padding: 30,
-    color: '#fff',
-    backgroundColor: '#dc143c',
+    padding: 20,
+    color: globalColors.white,
+    backgroundColor: globalColors.red,
   },
 });
