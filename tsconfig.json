@@ -1,10 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
+  "plugins": ["import"],
   "compilerOptions": {
+    "jsx": "react",
     "strict": true,
     "baseUrl": "./",
     "paths": {
+      "assets": ["./assets/*"],
       "src": ["./src/*"]
-    }
+    },
+    "typeRoots": ["./src/types/index", "node_modules/@types"],
   }
 }

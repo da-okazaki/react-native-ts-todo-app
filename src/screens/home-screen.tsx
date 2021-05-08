@@ -1,9 +1,8 @@
 import React, { FC, Fragment ,useState, useEffect } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, FlatList, Modal, SafeAreaView } from 'react-native';
-// 簡易API
+import { View, Text, TextInput, TouchableOpacity, FlatList, Modal, SafeAreaView } from 'react-native';
+
 import todoList from 'src/api/todos-list.json';
 import { styles } from 'src/styles/global-style';
-
 // 型指定
 // Todoタイプ定義
 type Todo = {
